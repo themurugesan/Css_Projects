@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        grid-area: main;
+      }
+      .item2 {
+        grid-area: right;
+        width: 800px;
+      }
+      .item3 {
+        grid-area: mains;
+      }
+      .item4 {
+        grid-area: rights;
+        width: 800px;
+      }
+      .item5 {
+        grid-area: footer;
+      }
+      #menu {
+        display: grid;
+        grid-template-areas:
+          "main main right right"
+          "mains mains rights rights"
+          "footer footer footer footer";
+
+        gap: 8vh;
+        padding-left: 18vh;
+        font-size: 4px;
+        text-align: justify;
+      }
+
+      #menu div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+
+        font-size: 25px;
+      }
+
+      #about {
+        display: grid;
+        grid-template-areas:
+          "main main right right"
+          "mains mains rights rights"
+          "footer footer footer footer";
+
+        gap: 8vh;
+        padding: 18vh;
+        font-size: 4px;
+        text-align: justify;
+      }
+
+      #about div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+
+        font-size: 25px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        body {
+          font-family: "Times New Roman", Georgia, Serif;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Playfair Display";
+          letter-spacing: 5px;
+        }
+      }
+      #header {
+        padding: 5vh;
+        margin-bottom: 2vh;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        background-color: white;
+      }
+      #header a {
+        font-size: 2vh;
+        text-decoration: none;
+        color: black;
+        float: right;
+        margin-left: 2vh;
+      }
+      .home {
+        display: inline;
+        float: left;
+      }
+      .img1 {
+        width: 100%;
+        height: 90vh;
+      }
+      .item4 h1,
+      h5 {
+        text-align: center;
+      }
+      #contact {
+        text-align: left;
+        padding: 18vh;
+
+        font-size: 3vh;
+        width: 80%;
+      }
+      input[type="text"],
+      [type="datetime-local"],
+      [type="number"] {
+        font-size: 3vh;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(20, 19, 19);
+      }
+      button {
+        background-color: rgb(233, 233, 233);
+        border: none;
+        color: rgb(15, 15, 15);
+        padding: 20px;
+        text-align: center;
+
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .item5 {
+        padding: 5vh;
+        background-color: rgb(233, 233, 233);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="home">
+        <a href="#home">Gourmet au Catering</a>
+      </div>
+
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <img src="hamburger.jpg" class="img1" alt="" />
+
+    <div id="about">
+      <div class="item1">
+        <img src="tablesetting2.jpg" style="opacity: 0.5" alt="" />
+      </div>
+      <div class="item2">
+        <h1 style="text-align: center">About Catering</h1>
+        <br />
+        <h5>Tradition since 1889</h5>
+        <br />
+        <p>
+          The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+          sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed
+          do eiusmod tempobody { font-family: "Times New Roman", Georgia, Serif;
+          } h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display";
+          letter-spacing: 5px; }r incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.We only use <span>seasonal</span> ingredients.
+        </p>
+        <br />
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod temporincididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <div id="menu">
+      <div class="item3">
+        <h1>Our Menu</h1>
+        <br />
+        <h4>Bread Basket</h4>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        <br />
+
+        <h4>Honey Almond Granola with Fruits</h4>
+        <p>
+          Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+        </p>
+        <br />
+
+        <h4>Belgian Waffle</h4>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
+        <br />
+
+        <h4>Scrambled eggs</h4>
+        <p>
+          Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+        </p>
+        <br />
+
+        <h4>Blueberry Pancakes</h4>
+        <p>With syrup, butter and lots of berries 8.50</p>
+      </div>
+      <div class="item4">
+        <img src="tablesetting.jpg" alt="" style="width: 70vh; opacity: 0.5" />
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+      <h1>Contact</h1>
+      <br />
+      <p>
+        We offer full-service catering for any event, large or small. We
+        understand your needs and we will cater the food to satisfy the biggerst
+        criteria of them all, both look and taste. Do not hesitate to contact
+        us.
+      </p>
+      <br />
+      <p>
+        <b>Catering Service, 42nd Living St, 43043 New York, NY</b>
+      </p>
+      <br />
+      <p>
+        You can also contact us by phone 00553123-2323 or email
+        catering@catering.com, or you can send us a message here:
+      </p>
+      <br />
+      <form action="/action_page.php" target="_blank">
+        <p>
+          <input type="text" placeholder="Name" required name="Name" />
+        </p>
+        <br />
+        <p>
+          <input
+            type="number"
+            placeholder="How many people"
+            required
+            name="People"
+          />
+        </p>
+        <br />
+        <p>
+          <input
+            type="datetime-local"
+            placeholder="Date and time"
+            required
+            name="date"
+            value="2020-11-16T20:00"
+          />
+        </p>
+        <br />
+        <p>
+          <input
+            type="text"
+            placeholder="Message \ Special requirements"
+            required
+            name="Message"
+          />
+        </p>
+        <br />
+        <p>
+          <button type="submit">SEND MESSAGE</button>
+        </p>
+        <br />
+      </form>
+    </div>
+
+    <div class="item5">Footer</div>
+  </body>
+</html>
