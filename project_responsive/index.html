@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="#home" class="navbar-logo">Gourmet au Catering</a>
+      <div class="navbar-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="home">
+      <img src="hamburger.jpg" alt="Hamburger Catering" class="header-image" />
+      <div class="header-text">
+        <h1>Le Catering</h1>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="content">
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="about-image">
+          <img
+            src="tablesetting2.jpg"
+            alt="Table Setting"
+            style="height: 70vh; width: 50vh"
+          />
+        </div>
+        <div class="about-text">
+          <h1>About Our Catering</h1>
+          <h5>Tradition Since 1889</h5>
+          <p>
+            Founded in 1889, our catering service has grown into a culinary
+            institution that is known for using the finest seasonal ingredients.
+          </p>
+          <p>
+            Our culinary team combines creativity with authenticity, crafting
+            menus that cater to a wide range of tastes and dietary preferences.
+            Whether it’s an intimate gathering or a grand celebration, our goal
+            is to make each event unforgettable by offering a personalized and
+            professional experience.
+          </p>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section class="menu-section" id="menu">
+        <div class="menu-text">
+          <h1>Our Menu</h1>
+          <div class="menu-item">
+            <h4>Bread Basket</h4>
+            <p>Assortment of fresh baked fruit breads and muffins - $5.50</p>
+          </div>
+          <div class="menu-item">
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>
+              Natural cereal of honey toasted oats, raisins, almonds and dates -
+              $7.00
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4>Belgian Waffle</h4>
+            <p>Vanilla-flavored batter with malted flour - $7.50</p>
+          </div>
+        </div>
+        <div class="menu-image">
+          <img src="tablesetting.jpg" alt="Menu Image" />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h1>Contact Us</h1>
+        <p>
+          For full-service catering, whether large or small, we are here to
+          provide outstanding service. Contact us with any inquiries!
+        </p>
+        <form action="/submit" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="number"
+            name="people"
+            placeholder="How many people?"
+            required
+          />
+          <input type="datetime-local" name="date" required />
+          <textarea name="message" placeholder="Special requirements"></textarea
+          ><br />
+          <button
+            type="submit"
+            style="background-color: #f1f1f1; width: 150px; height: 50px"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Powered by Custom HTML & CSS</p>
+    </footer>
+  </body>
+</html>
